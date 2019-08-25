@@ -12,6 +12,13 @@
 		AD6DC1F42311CDA4003698F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6DC1F22311CDA4003698F4 /* Main.storyboard */; };
 		AD6DC1F62311CDA6003698F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6DC1F52311CDA6003698F4 /* Assets.xcassets */; };
 		AD6DC1F92311CDA6003698F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6DC1F72311CDA6003698F4 /* LaunchScreen.storyboard */; };
+		AD6DC2022312660E003698F4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DC2012312660E003698F4 /* BaseView.swift */; };
+		AD6DC20623126764003698F4 /* DetailsFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DC20523126764003698F4 /* DetailsFoodView.swift */; };
+		AD6DC2082312690D003698F4 /* DetailsFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DC2072312690D003698F4 /* DetailsFoodViewController.swift */; };
+		AD6DC20B231269A0003698F4 /* RestorantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DC20A231269A0003698F4 /* RestorantTableViewController.swift */; };
+		AD6DC20E231269D4003698F4 /* RestorantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DC20D231269D4003698F4 /* RestorantTableViewCell.swift */; };
+		AD6DC21223126FFA003698F4 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DC21123126FFA003698F4 /* LocationView.swift */; };
+		AD6DC214231270E5003698F4 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DC213231270E5003698F4 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		AD6DC1F52311CDA6003698F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD6DC1F82311CDA6003698F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD6DC1FA2311CDA6003698F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6DC2012312660E003698F4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		AD6DC20523126764003698F4 /* DetailsFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodView.swift; sourceTree = "<group>"; };
+		AD6DC2072312690D003698F4 /* DetailsFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodViewController.swift; sourceTree = "<group>"; };
+		AD6DC20A231269A0003698F4 /* RestorantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorantTableViewController.swift; sourceTree = "<group>"; };
+		AD6DC20D231269D4003698F4 /* RestorantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorantTableViewCell.swift; sourceTree = "<group>"; };
+		AD6DC21123126FFA003698F4 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		AD6DC213231270E5003698F4 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 		AD6DC1ED2311CDA4003698F4 /* RestaurantApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD6DC200231265EA003698F4 /* Screen */,
 				AD6DC1EE2311CDA4003698F4 /* AppDelegate.swift */,
 				AD6DC1F02311CDA4003698F4 /* ViewController.swift */,
 				AD6DC1F22311CDA4003698F4 /* Main.storyboard */,
@@ -62,6 +77,68 @@
 				AD6DC1FA2311CDA6003698F4 /* Info.plist */,
 			);
 			path = RestaurantApp;
+			sourceTree = "<group>";
+		};
+		AD6DC200231265EA003698F4 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DC20F23126FAC003698F4 /* Location */,
+				AD6DC20923126952003698F4 /* List */,
+				AD6DC20323126727003698F4 /* Details */,
+				AD6DC2012312660E003698F4 /* BaseView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		AD6DC20323126727003698F4 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DC20423126738003698F4 /* Views */,
+				AD6DC2072312690D003698F4 /* DetailsFoodViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		AD6DC20423126738003698F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DC20523126764003698F4 /* DetailsFoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD6DC20923126952003698F4 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DC20C231269B1003698F4 /* Views */,
+				AD6DC20A231269A0003698F4 /* RestorantTableViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		AD6DC20C231269B1003698F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DC20D231269D4003698F4 /* RestorantTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD6DC20F23126FAC003698F4 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DC21023126FC5003698F4 /* Views */,
+				AD6DC213231270E5003698F4 /* LocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		AD6DC21023126FC5003698F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DC21123126FFA003698F4 /* LocationView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6DC2022312660E003698F4 /* BaseView.swift in Sources */,
+				AD6DC21223126FFA003698F4 /* LocationView.swift in Sources */,
+				AD6DC20623126764003698F4 /* DetailsFoodView.swift in Sources */,
+				AD6DC20B231269A0003698F4 /* RestorantTableViewController.swift in Sources */,
+				AD6DC2082312690D003698F4 /* DetailsFoodViewController.swift in Sources */,
+				AD6DC20E231269D4003698F4 /* RestorantTableViewCell.swift in Sources */,
+				AD6DC214231270E5003698F4 /* LocationViewController.swift in Sources */,
 				AD6DC1F12311CDA4003698F4 /* ViewController.swift in Sources */,
 				AD6DC1EF2311CDA4003698F4 /* AppDelegate.swift in Sources */,
 			);
