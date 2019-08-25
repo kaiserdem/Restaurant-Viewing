@@ -28,6 +28,12 @@ final class LocationService: NSObject {
   var status: CLAuthorizationStatus {
     return CLLocationManager.authorizationStatus()
   }
+  func requestLocationAuthorization() {
+    manager.requestWhenInUseAuthorization()
+  }
+  func getLocation() {
+    manager.requestLocation()
+  }
 }
 extension LocationService: CLLocationManagerDelegate {
   
